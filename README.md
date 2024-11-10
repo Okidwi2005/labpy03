@@ -32,3 +32,15 @@ for i, bil in enumerate(bilangan_acak, 1):
 ```
 
 # Output program
+![Screenshot 2024-11-10 111222](https://github.com/user-attachments/assets/4ad5f84d-4b88-449b-905d-f94ac89eacd2)
+
+# Penjelasan program
+1. import random: Mengimpor modul random untuk fungsi random().
+2. Input n: Program meminta input dari pengguna untuk menentukan jumlah bilangan acak yang diinginkan.
+3. Loop while:
+- Menghasilkan bilangan acak menggunakan random.random() dalam rentang [0,1).
+- Mengecek apakah bilangan tersebut lebih kecil dari 0.5.
+- Jika ya, bilangan ditambahkan ke dalam list bilangan_acak, dan count meningkat satu
+4. Loop for: Menampilkan semua bilangan acak yang valid dalam list bilangan_acak.
+
+## Latihan 2
