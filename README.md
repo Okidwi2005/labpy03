@@ -44,3 +44,30 @@ for i, bil in enumerate(bilangan_acak, 1):
 4. Loop for: Menampilkan semua bilangan acak yang valid dalam list bilangan_acak.
 
 # Latihan 2
+## Deskripsi program
+Seorang pengusaha menginvestasikan uangnya untuk memulai usahanya dengan modal
+awal 100 juta, pada bulan pertama dan kedua belum mendapatkan laba. pada bulan ketiga
+baru mulai mendapatkan laba sebesar 1% dan pada bulan ke 5, pendapatan meningkat 5%,
+selanjutnya pada bulan ke 8 mengalami penurunan keuntungan sebesar 2%, sehingga laba
+menjadi 3%. Hitung total keuntungan selama 8 bulan berjalan usahanya.
+
+## Kode program
+```python
+# Modal awal
+modal_awal = 100_000_000  # 100 juta
+keuntungan = 0
+
+# Buat daftar persentase keuntungan untuk setiap bulan
+persentase_keuntungan = [0, 0, 0.01, 0.01, 0.05, 0.05, 0.05, 0.03]
+
+# Iterasi selama 8 bulan untuk menghitung total keuntungan
+for bulan, persentase in enumerate(persentase_keuntungan, start=1):
+    laba_bulan_ini = modal_awal * persentase
+    keuntungan += laba_bulan_ini
+    print(f"Bulan {bulan}: Persentase Keuntungan = {persentase * 100}% , Laba = Rp{laba_bulan_ini:.0f}")
+
+# Tampilkan total keuntungan selama 8 bulan
+print(f"\nTotal Keuntungan selama 8 bulan = Rp{keuntungan:.0f}")
+```
+
+## Output program
